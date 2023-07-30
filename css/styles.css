@@ -1,7 +1,7 @@
 /* Add custom styles here */
 
 .hero {
-    background-image: url("images/parking-image.jpg");
+    background-image: url("/images/parking-image.jpg");
     background-size: cover;
     background-position: center;
     padding: 150px 0;
