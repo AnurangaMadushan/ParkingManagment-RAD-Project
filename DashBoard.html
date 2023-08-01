@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" type="text/css" href="DashBoard.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/b0ede3d087.js" crossorigin="anonymous"></script>
+
+<script src="DashBoard.js"> </script>
+
+</head>
+<body>
+
+<div id="throbber" style="display:none; min-height:120px;"></div>
+<div id="noty-holder"></div>
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <div class="heading">
+                <h1>PARKEASE</h1>
+             </div>
+        </div>
+       
+        
+        <!-- Sidebar Menu Items -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav">
+                <li>
+                    <a href="DashBoard.html" data-toggle="collapse" data-target="#submenu-1"><i class="fas fa-tachometer-alt-average"></i></i></i> DASHBOARD </a>
+                    
+                </li>
+
+                <li>
+                  <a href="Admin.html"><i class="fa fa-fw fa-user-plus"></i> ADMIN PANEL</a>
+              </li>
+                
+                <li>
+                    <a href="parkingInChargeOperator.html"><i class="fa fa-fw fa-user-plus"></i> IN CHARGE OPERATOR</a>
+                </li>
+
+                <li>
+                  <a href="vehicleOwners.html"><i class="fa fa-fw fa-user-plus"></i> VEHICLE OWNERS</a>
+              </li>
+                
+              <button class="btn btn-danger" type="submit" name="logout" >LOGOUT</button>
+            </ul>
+
+           
+        </div>
+       
+    </nav>
+
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <!-- Page Heading -->
+            <div class="row" id="main" >
+                <div class="col-sm-12 col-md-12 well" id="content">
+                    <h1>Welcome to ParkEase!</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--users-->
+    <div class="container bootstrap snippet">
+  <div class="row">
+    <div class="col-lg-2 col-sm-6">
+      <div class="circle-tile ">
+        <a href="VehicleOwners.html"><div class="circle-tile-heading dark-blue"><i class="fa fa-users fa-fw fa-3x"></i></div></a>
+        <div class="circle-tile-content dark-blue">
+          <div class="circle-tile-description text-faded"> Vehicle <br> Owners</div>
+          <div class="circle-tile-number text-faded ">265</div>
+         
+        </div>
+      </div>
+    </div>
+     
+    <div class="col-lg-2 col-sm-6">
+      <div class="circle-tile ">
+        <a href="parkingInChargeOperator.html"><div class="circle-tile-heading red"><i class="fa fa-users fa-fw fa-3x"></i></div></a>
+        <div class="circle-tile-content red">
+          <div class="circle-tile-description text-faded"> In Charge <br> Operators </div>
+          <div class="circle-tile-number text-faded ">10</div>
+         
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+<!--footer-->
+<footer>
+    <div class="footer-content">
+      <p> Copyright© ParkEase | 2023. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
